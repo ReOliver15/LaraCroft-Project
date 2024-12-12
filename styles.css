@@ -1,0 +1,287 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    color: #fff; /* white*/
+    background-color: #C89F6A; /*Marrom claro*/
+    padding: 0;
+    margin: 30px;
+    line-height: 1.6;
+}
+/*Cabeçalho*/
+header {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #6E4B3A;
+    border-radius: 5px;
+
+}
+header h1 { /*Titulo do Header*/
+    font-size: 3rem;
+    margin-bottom: 10px;
+}
+header p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+
+nav {
+    display: flex; /*um elemento ao lado do outro*/
+    justify-content: center; /*Centraliza os itens de navegação*/
+    padding: 20px;
+    font-family: Arial, Helvetica, sans-serif
+}
+nav ul {
+    display: flex;
+    align-items: center;
+    list-style: none;
+}
+nav ul li {
+    margin-right: 15px; /*Espaço entre os itens*/
+}
+nav ul li a {
+    color: #f0e8e8;
+    text-decoration: none;
+    padding:5px 10px; /*espaçamento entre os itens do menu */
+    border-radius:  3px; /*Deixa as bordas redondas*/
+    transition: background-color 0.3s ease; /*Suaviza uma transição*/
+}
+nav ul li a:hover {
+    color: black; /* altera a cor quando passamos o mouse pro cima*/
+    font-weight: bold;
+    background-color: #8E5B4A;
+}
+h1 {
+    font-size: 32px;
+}
+.about-game {
+    text-align: justify;
+    padding: 50px 20px;
+}
+.about-game h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #6b4435;
+}
+.about-game p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+}
+.about-game img {
+    width: 100%;
+    max-width: 800px; /*Limita a largura da imagem*/
+    display: block;
+    margin: 20px auto;
+}
+
+/*Características do jogo*/
+.features {
+    background-color: #6E4B3A;
+    padding: 40px 20px;
+    text-align: center;
+    border-radius: 5px;
+    margin-bottom: 30px;
+}
+.features h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.features ul {
+    list-style-type: none;
+}
+
+.features li {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+/* Estilizando o botão dentro da seção "final-cta" */
+
+.final-cta {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #222; /* Cor de fundo para a seção */
+    border-radius: 5px;
+}
+
+.final-cta h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #fff; /* Cor do título */
+}
+
+.cta-button {
+    display: inline-block;
+    padding: 15px 30px; /* Tamanho do botão */
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #fff; /* Cor do texto */
+    background-color: #0078d4; /* Cor de fundo (azul Xbox) */
+    text-decoration: none; /* Remove o sublinhado */
+    border-radius: 5px; /* Bordas arredondadas */
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Efeitos de transição */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra suave para o botão */
+}
+
+.cta-button:hover {
+    background-color: #005fa3; /* Cor de fundo mais escura ao passar o mouse */
+    transform: scale(1.05); /* Efeito de aumentar o botão ao passar o mouse */
+}
+
+.cta-button:active {
+    background-color: #004c87; /* Cor de fundo ao clicar no botão */
+    transform: scale(0.98); /* Retorna ao tamanho original */
+}
+
+footer {
+    text-align: center;
+    padding: 20px 0;
+    border-top: 1px solid #666;
+    margin-top: 30px;
+    border-top: none; /*Agora sim removeu a linha*/
+}
+footer p {
+    font-size: 1rem;
+    margin: 0;
+    padding: 10px 20px;
+    background-color: #7A4B39;
+    border-radius: 5px;
+}
+
+/*RESPONSIVIDADE DA PAGÍNA*/
+
+@media (max-width: 768px) {
+    body {
+        margin: 0 10px;
+    }
+    nav ul {
+        flex-direction: column;
+    }
+    nav ul li a {
+        text-align: center;
+    }
+
+    header h1 {
+        font-size: 2rem;
+    }
+    .about-game h2, .features h2, .final-cta h2 {
+        font-size: 1.8rem;
+    }
+    .cta-button {
+        width: 50%;
+    }
+    footer {
+        padding: 15px;
+    }
+    footer p {
+        font-size: 0.9rem;
+        margin: 0;
+        padding: 8px 16px;
+    }
+}
+
+/* ----------  CSS & Estilos Página 2 ------- */
+
+
+.aboutlara h2{
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #6b4435;
+}
+.aboutlara {
+    text-align: justify;
+    padding: 50px 20px;
+}
+.aboutlara p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+}
+
+.aboutlara img {
+    border: 3px solid #111;
+    border-radius: 8px;
+    width: 100%;
+    max-width: 800px; /*Limita a largura da imagem*/
+    display: block;
+    margin: 20px auto;
+    border: 5px solid #444242e0;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.041); /*Sombra suave*/
+}
+
+/*Outras regras especificas para a página 2 */
+
+.page2 footer {
+    padding: 20px;
+    text-align: center;
+    margin-top: 40px;
+    border-top: none; /* Remover a linha de borda superior */
+    color: #fff; /* Garantir que o texto do rodapé fique visível */
+}
+.page2 footer p {
+    font-size: 1rem;
+    background-color: #7A4B39;
+    border-radius: 5px;
+    padding: 10px 20px;
+}
+
+/* ----------  CSS & Estilos Página 3 ------- */
+
+.about-rise h2{
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #6b4435;
+}
+.about-rise {
+    text-align: justify;
+    padding: 50px 20px;
+}
+.about-rise p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+}
+
+.about-rise img {
+    border: 3px solid #111;
+    border-radius: 8px;
+    width: 100%;
+    max-width: 800px; /*Limita a largura da imagem*/
+    display: block;
+    margin: 20px auto;
+    border: 5px solid #444242e0;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.041); /*Sombra suave*/
+}
+
+/* ----------  CSS & Estilos Página 4 ------- */
+
+.about-shadow h2{
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #6b4435;
+}
+.about-shadow {
+    text-align: justify;
+    padding: 50px 20px;
+}
+.about-shadow p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+}
+
+.about-shadow img {
+    border: 3px solid #111;
+    border-radius: 8px;
+    width: 100%;
+    max-width: 800px; /*Limita a largura da imagem*/
+    display: block;
+    margin: 20px auto;
+    border: 5px solid #444242e0;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.041); /*Sombra suave*/
+}
