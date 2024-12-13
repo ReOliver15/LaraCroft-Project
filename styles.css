@@ -3,6 +3,7 @@
     padding: 0;
     box-sizing: border-box;
 }
+
 body {
     font-family: Arial, Helvetica, sans-serif;
     text-align: center;
@@ -269,6 +270,7 @@ footer p {
     text-align: justify;
     padding: 50px 20px;
 }
+
 .about-shadow p {
     font-size: 1.2rem;
     margin-bottom: 30px;
